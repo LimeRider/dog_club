@@ -1,0 +1,23 @@
+.button {
+  opacity: 1;
+  gap: 10px;
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  background-color: $brand_color;
+  color: $primary_white;
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 100%;
+  border-color: transparent;
+
+  &__basket {
+    background-color: transparent;
+    border-color: transparent;
+    margin-right: 6px;
+  }
+}
