@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -35,10 +35,160 @@
             <button class="button__basket" type="button">
               <img src="./images/basket.svg" alt="Basket" />
             </button>
-            <button class="button" type="button">Contact us</button>
+            <button
+              class="button"
+              type="button"
+              onclick="document.getElementById('modal').showModal()"
+            >
+              Contact us
+            </button>
+            <dialog class="modal" id="modal">
+              <div class="modal__container">
+                <h2 class="modal__title">
+                  Our experts will take <br />
+                  care of your friend
+                </h2>
+                <p class="modal__text">
+                  Fill out the form so we can contact you!
+                </p>
+                <form class="modal__form" name="modal-form" autocomplete="off">
+                  <div class="modal__form-field input">
+                    <label class="input__label visually-hidden" for="user-name">
+                      Your name
+                    </label>
+                    <img
+                      class="modal__form-icons"
+                      src="./images/name--image.svg"
+                      alt="іконка ім'я"
+                    />
+                    <input
+                      class="input__control"
+                      type="text"
+                      name="user-name"
+                      id="user-name"
+                      placeholder=" Your name "
+                      required
+                    />
+                  </div>
+                  <div class="modal__form-field input">
+                    <label class="input__label visually-hidden" for="user-name">
+                      Pet name
+                    </label>
+                    <img
+                      class="modal__form-icons"
+                      src="./images/pet-name-iamge.svg"
+                      alt="ім'я собаки"
+                    />
+                    <input
+                      class="input__control"
+                      type="text"
+                      name="user-name"
+                      id="user-name"
+                      placeholder="Pet name"
+                      required
+                    />
+                  </div>
+                  <div class="modal__form-field input">
+                    <label class="input__label visually-hidden" for="user-tel">
+                      Your phone
+                    </label>
+                    <img
+                      class="modal__form-icons"
+                      src="./images/phone-image.svg"
+                      alt="іконка телефону"
+                    />
+                    <input
+                      class="input__control"
+                      type="tel"
+                      name="user-tel"
+                      id="user-tel"
+                      placeholder="Your phone"
+                      pattern="^\+[0-9]{12}"
+                      required
+                    />
+                  </div>
+
+                  <div class="modal__form-field input">
+                    <label
+                      class="input__label visually-hidden"
+                      for="user-email"
+                    >
+                      Your email
+                    </label>
+                    <img
+                      class="modal__form-icons"
+                      src="./images/email-image.jpg"
+                      alt="іконка пошти"
+                    />
+                    <input
+                      class="input__control"
+                      type="email"
+                      name="user-email"
+                      id="user-email"
+                      placeholder="Your email"
+                      required
+                    />
+                  </div>
+                  <button
+                    class="modal__form-button button"
+                    type="submit"
+                    id="submit-btn"
+                    disabled
+                  >
+                    Contact us
+                  </button>
+                </form>
+                <div class="modal__checkbox">
+                  <input
+                    type="checkbox"
+                    id="modal__privacy-policy"
+                    class="modal__checkbox"
+                    onchange="
+                      document.getElementById('submit-btn').disabled =
+                        !this.checked
+                    "
+                    required
+                  />
+                  <label for="modal__privacy-policy" class="checkbox-label">
+                    <a href="#" class="modal__privacy-link"
+                      >I agree to the privacy policy</a
+                    >
+                  </label>
+                </div>
+                <form method="dialog">
+                  <button class="modal__button-close"></button>
+                </form>
+              </div>
+            </dialog>
           </div>
         </div>
       </div>
     </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-section__container">
+            <img
+              class="hero-section__image-dog"
+              src="./images/hero-dog.svg"
+              alt=""
+            />
+            <h1 class="hero-section__title">Taking care for your Smart Dog!</h1>
+            <img
+              class="hero-section__image-elements"
+              src="./images/hero-bg-elemetns.svg"
+              alt=""
+            />
+
+            <p>
+              Human–canine bonding is the relationship <br />between dogs and
+              humans
+            </p>
+            <button class="hero-section__button button">Explore More</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>

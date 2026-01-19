@@ -1,0 +1,29 @@
+.input {
+  &__control {
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 5%;
+    color: $primary_dark;
+    width: 600px;
+    height: 48px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: $brand_color;
+    padding-left: 80px;
+  }
+}
+
+::placeholder {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 5%;
+  color: $brand_color;
+
+  border-color: $brand_color;
+}

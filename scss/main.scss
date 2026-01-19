@@ -1,8 +1,11 @@
-@import "./base";
 @import "./utils/variables";
+@import "./base";
 @import "./utils/utils";
 @import "./utils/fonts";
 @import "./components/container";
 @import "./layouts/links";
 @import "./layouts/buttons";
 @import "./components/header";
+@import "./components/modal";
+@import "./layouts/input";
+@import "./components/hero-section";
