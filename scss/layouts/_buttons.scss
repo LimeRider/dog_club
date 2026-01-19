@@ -16,6 +16,10 @@
   border-color: transparent;
   cursor: pointer;
 
+  &:hover {
+    background-color: $brand_color_light;
+  }
+
   &__basket {
     background-color: transparent;
     border-color: transparent;
