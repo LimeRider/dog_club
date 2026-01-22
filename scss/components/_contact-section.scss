@@ -1,0 +1,55 @@
+.contact-section {
+  background-image: url(../images/contact-section-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  margin-bottom: 100px;
+  &__title {
+    @extend .modal__title;
+  }
+
+  &__text {
+    @extend .modal__text;
+  }
+
+  &__form {
+    @extend .modal__form;
+  }
+
+  &__form-field {
+    @extend .modal__form-field;
+  }
+
+  &__form-icons {
+    @extend .modal__form-icons;
+  }
+
+  &__form-button {
+    @extend .modal__form-button;
+  }
+
+  &__checkbox {
+    @extend .modal__checkbox;
+  }
+
+  &__privacy-link {
+    @extend .modal__privacy-link;
+  }
+
+  &__dogs {
+    position: relative;
+  }
+
+  &__dog-l {
+    position: absolute;
+    left: 0;
+    top: 100px;
+  }
+
+  &__dog-r {
+    position: absolute;
+    right: 0;
+
+    top: -100px;
+  }
+}

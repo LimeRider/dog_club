@@ -117,7 +117,7 @@
                     </label>
                     <img
                       class="modal__form-icons"
-                      src="./images/email-image.jpg"
+                      src="./images/email-image.svg"
                       alt="іконка пошти"
                     />
                     <input
@@ -273,7 +273,250 @@
           </div>
         </div>
       </section>
+      <section class="reviews-section">
+        <div class="container">
+          <div class="reviews-section__container">
+            <h2 class="reviews-section__title">Happy customer</h2>
+            <div class="reviews-section__cards">
+              <article>
+                <img src="./images/customer-1.svg" alt="customer-1" />
+                <div class="reviews-section__rewiew">
+                  <h3>Christin & Tom</h3>
+                  <p>Love the overall workout experience!</p>
+                  <div class="reviews-section__rating">
+                    <img src="./images/rating-1.svg" alt="rating" />
+                    <p class="">5/5</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-section__container">
+            <div class="contact-section__dogs">
+              <img
+                class="contact-section__dog-r"
+                src="./images/contact-section-dog-right.svg"
+                alt="dog"
+              />
+              <img
+                class="contact-section__dog-l"
+                src="./images/contact-section-dog-left.svg"
+                alt="dog"
+              />
+            </div>
+
+            <h2 class="contact-section__title">
+              Our experts will take <br />
+              care of your friend
+            </h2>
+            <p class="contact-section__text">
+              Fill out the form so we can contact you!
+            </p>
+            <form
+              class="contact-section__form"
+              name="contact-section-form"
+              autocomplete="off"
+            >
+              <div class="contact-section__form-field input">
+                <label class="input__label visually-hidden" for="user-name">
+                  Your name
+                </label>
+                <img
+                  class="contact-section__form-icons"
+                  src="./images/name--image.svg"
+                  alt="іконка ім'я"
+                />
+                <input
+                  class="input__control"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder=" Your name "
+                  required
+                />
+              </div>
+              <div class="contact-section__form-field input">
+                <label class="input__label visually-hidden" for="user-name">
+                  Pet name
+                </label>
+                <img
+                  class="contact-section__form-icons"
+                  src="./images/pet-name-iamge.svg"
+                  alt="ім'я собаки"
+                />
+                <input
+                  class="input__control"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="Pet name"
+                  required
+                />
+              </div>
+              <div class="contact-section__form-field input">
+                <label class="input__label visually-hidden" for="user-tel">
+                  Your phone
+                </label>
+                <img
+                  class="contact-section__form-icons"
+                  src="./images/phone-image.svg"
+                  alt="іконка телефону"
+                />
+                <input
+                  class="input__control"
+                  type="tel"
+                  name="user-tel"
+                  id="user-tel"
+                  placeholder="Your phone"
+                  pattern="^\+[0-9]{12}"
+                  required
+                />
+              </div>
+
+              <div class="contact-section__form-field input">
+                <label class="input__label visually-hidden" for="user-email">
+                  Your email
+                </label>
+                <img
+                  class="contact-section__form-icons"
+                  src="./images/email-image.svg"
+                  alt="іконка пошти"
+                />
+                <input
+                  class="input__control"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+              <button
+                class="contact-section__form-button button"
+                type="submit"
+                id="submit-button"
+                disabled
+              >
+                Contact us
+              </button>
+            </form>
+            <div class="contact-section__checkbox">
+              <input
+                type="checkbox"
+                id="contact-section__privacy-policy"
+                class="contact-section__checkbox"
+                onchange="
+                  document.getElementById('submit-button').disabled =
+                    !this.checked
+                "
+                required
+              />
+              <label
+                for="contact-section__privacy-policy"
+                class="checkbox-label"
+              >
+                <a href="#" class="contact-section__privacy-link"
+                  >I agree to the privacy policy</a
+                >
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__socials">
+            <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+            <div class="footer__icons">
+              <a href="#"><img src="./images/icon-inst.svg" alt="inst" /></a>
+              <a href="#"><img src="./images/icon-fb.svg" alt="fb" /></a>
+            </div>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li><a class="link" href="#"> Less talk</a></li>
+              <li><a class="link" href="#">Services category</a></li>
+              <li><a class="link" href="#">Happy customer</a></li>
+              <li><a class="link" href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="footer__forms">
+            <form class="footer__form" name="footer-form" autocomplete="off">
+              <div class="footer__form-field input">
+                <label class="input__label visually-hidden" for="user-email">
+                  Your email
+                </label>
+                <img
+                  class="footer__form-icons"
+                  src="./images/email-image.svg"
+                  alt="іконка пошти"
+                />
+                <input
+                  class="input__control footer__control"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Your email"
+                  required
+                />
+              </div>
+
+              <div class="footer__form-field input">
+                <label class="input__label visually-hidden" for="user-tel">
+                  Your phone
+                </label>
+                <img
+                  class="footer__form-icons"
+                  src="./images/phone-image.svg"
+                  alt="іконка телефону"
+                />
+                <input
+                  class="input__control footer__control"
+                  type="tel"
+                  name="user-tel"
+                  id="user-tel"
+                  placeholder="Your phone"
+                  pattern="^\+[0-9]{12}"
+                  required
+                />
+              </div>
+
+              <button
+                class="footer__form-button button"
+                type="submit"
+                id="submit-button-footer"
+                disabled
+              >
+                Contact us
+              </button>
+            </form>
+            <div class="footer__checkbox">
+              <input
+                type="checkbox"
+                id="footer__privacy-policy"
+                class="footer__checkbox"
+                onchange="
+                  document.getElementById('submit-button-footer').disabled =
+                    !this.checked
+                "
+                required
+              />
+              <label for="footer__privacy-policy" class="checkbox-label">
+                <a href="#" class="footer__privacy-link"
+                  >I agree to the privacy policy</a
+                >
+              </label>
+            </div>
+          </div>
+          <img class="footer__dog" src="./images/luska.svg" alt="luska" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

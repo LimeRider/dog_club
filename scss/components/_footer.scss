@@ -1,0 +1,67 @@
+.footer {
+  background-color: rgba(255, 250, 243, 1);
+  padding: 32px 100px;
+  margin-bottom: 50px;
+  height: 300px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-right: 100px;
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icons {
+    display: flex;
+    margin-top: 24px;
+  }
+
+  &__form {
+    @extend .modal__form;
+    gap: 15px;
+  }
+
+  &__form-field {
+    @extend .modal__form-field;
+  }
+
+  &__form-icons {
+    @extend .modal__form-icons;
+    width: 24px;
+    height: 24px;
+    top: 30px;
+    left: 24px;
+  }
+
+  &__form-button {
+    @extend .modal__form-button;
+  }
+
+  &__checkbox {
+    @extend .modal__checkbox;
+  }
+
+  &__privacy-link {
+    @extend .modal__privacy-link;
+  }
+  &__control {
+    width: 320px;
+    height: 35px;
+    padding-left: 56px;
+    background-color: transparent;
+  }
+
+  &__dog {
+    position: relative;
+    top: 9px;
+  }
+}
