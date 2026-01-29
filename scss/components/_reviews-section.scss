@@ -1,0 +1,109 @@
+.reviews-section {
+  padding: 0 120px;
+  &__title {
+    @extend .services-section__title;
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  &__list {
+    display: flex;
+  }
+
+  &__image {
+    border-radius: 24px;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  &__card {
+    border-radius: 24px;
+    height: 450px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__review {
+    padding: 16px;
+    position: relative;
+    bottom: 130px;
+    background-color: $secondary_color;
+    width: 344px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  &__card-title {
+    margin-bottom: 8px;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: $primary_white;
+  }
+
+  &__card-text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: $primary_white;
+    margin-bottom: 24px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__point {
+    margin: 0;
+  }
+
+  &__button {
+    display: none;
+  }
+}
+
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: transparent;
+  background-color: $secondary_color;
+  border-radius: 50%;
+  border: 1px solid $secondary_color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $brand_color;
+    border: 1px solid $brand_color;
+  }
+
+  &.next {
+    transform: rotate(180deg);
+  }
+}
+
+.swiper-slide {
+  width: 345px;
+  height: auto;
+}
+
+.swiper-container {
+  overflow: hidden;
+}

@@ -1,0 +1,29 @@
+.hero-section {
+  background-image: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 217px;
+  padding-left: 100px;
+  height: 808px;
+
+  &__title {
+    font-family: Rowdies;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    width: 635px;
+  }
+
+  &__image-elements {
+    position: absolute;
+    top: 240px;
+    position: absolute;
+    right: 100px;
+  }
+
+  &__image-dog {
+    position: absolute;
+    right: 164px;
+  }
+}

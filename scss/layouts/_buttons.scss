@@ -14,10 +14,22 @@
   font-size: 18px;
   line-height: 100%;
   border-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $brand_color_light;
+  }
 
   &__basket {
     background-color: transparent;
     border-color: transparent;
     margin-right: 6px;
   }
+}
+
+.button:disabled {
+  background: #e0e0e0; /* сірий фон */
+  color: #999; /* сірий текст */
+  cursor: not-allowed;
+  opacity: 0.6;
 }
